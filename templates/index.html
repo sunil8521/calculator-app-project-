@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <!-- Mobile App Meta Tags -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Calculator">
+</head>
+
+<body>
+    <div class="main">
+        <div id="time">
+        </div>
+        <div class="small_screen">
+            <input type="text" id="calculationInput" readonly value="0">
+        </div>
+        <div class="answer_screen">
+            <input type="text" id="answerInput" readonly value="0">
+        </div>
+        <div class="buttons">
+            <div class="allclear"><button>AC</button></div>
+            <div class="plush_minus"><button>+/-</button></div>
+            <div class="subtract special_sign"><button>x&#178;</button></div>
+            <div class="clear"><button>C</button></div>
+
+            <div class="subtract special_sign"><button>&Sqrt;</button></div>
+            <div class="subtract special_sign"><button>&#x221B;</button></div>
+            <div class="subtract special_sign"><button>x&#179;</button></div>
+            <div class="subtract sign"><button>/</button></div>
+
+            <div class="seven number"><button>7</button></div>
+            <div class="eight number"><button>8</button></div>
+            <div class="nine number"><button>9</button></div>
+            <div class="into sign"><button>&#215;</button></div>
+            <div class="four number"><button>4</button></div>
+            <div class="five number"><button>5</button></div>
+            <div class="six number"><button>6</button></div>
+            <div class="minus sign"><button>-</button></div>
+            <div class="one number"><button>1</button></div>
+            <div class="two number"><button>2</button></div>
+            <div class="three number"><button>3</button></div>
+            <div class="plush sign"><button>+</button></div>
+            <div class="dot"><button>.</button></div>
+            <div class="zero number"><button>0</button></div>
+            <div class="percent"><button>%</button></div>
+            <div class="answer"><button>=</button></div>
+        </div>
+    </div>
+    <footer>// Engineered with code</footer>
+<script src="{{ url_for('static', filename='index.js') }}"></script>
+</body>
+
+</html>

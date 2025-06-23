@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@200&family=Roboto+Mono&display=swap");
+
+body {
+  margin: 0;
+}
+
+.main {
+  background-color: #3a4655;
+  max-width: 328px;
+  border-radius: 5px;
+  margin: 20px auto;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  padding-top: 5px;
+}
+
+button {
+  background-color: #374352;
+  border: none;
+  font-size: 25px;
+  height: 80px;
+  width: 80px;
+  border-radius: 5px;
+  user-select: none;
+  font-family: monospace;
+  color: #737d87;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+button:active {
+    background-color: #546272;
+  }
+.buttons {
+  display: grid;
+  grid-template: repeat(5, 1fr) / repeat(4, 1fr);
+  gap: 2px;
+}
+
+.clear button,
+.allclear button {
+  font-family: monospace;
+  color: #c85853;
+}
+
+.seven button,
+.eight button,
+.nine button,
+.four button,
+.five button,
+.six button,
+.one button,
+.two button,
+.three button,
+.dot button,
+.zero button {
+  color: #b7d4e0;
+  font-family: monospace;
+}
+
+.answer button {
+  font-family: monospace;
+  color: #64d59c;
+  font-size: 35px;
+  grid-area: 5/3/6/5;
+}
+
+input[type="text"] {
+  padding: 0;
+  border: none;
+  background-color: #3a4655;
+  border: none;
+  outline: none;
+  width: 308px;
+}
+.small_screen {
+  color: #737d87;
+  padding: 0 10px;
+  user-select: none;
+}
+.small_screen input {
+  color: #737d87;
+  text-align: right;
+  font: 21px monospace;
+  margin-top: 10px;
+}
+
+.answer_screen {
+  padding: 0 10px;
+  margin-bottom: 20px;
+  user-select: none;
+}
+.answer_screen input {
+  text-align: right;
+  font-family: "Exo 2", sans-serif;
+  color: #b7d4e0;
+  height: 56px;
+  font-size: 42px;
+}
+#time {
+  font-family: monospace;
+  color: #b7d4e0;
+  padding: 0 10px;
+  user-select: none;
+}
+footer {
+  text-align: center;
+  font-family: monospace;
+  font-size: 15px;
+  padding: 8px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  user-select: none;
+}
