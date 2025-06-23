@@ -40,7 +40,7 @@ jobs:
   #       run: |
   #         docker push saga8521/calculator-app
   deploy:
-    needs: build-and-deploy
+    # needs: build-and-deploy
     runs-on: ubuntu-latest
 
     steps:
@@ -54,4 +54,4 @@ jobs:
             docker pull saga8521/calculator-app
             docker stop calculator || true
             docker rm calculator || true
-            docker run -d -p 50:5000 --name calculator saga8521/calculator-app
+            docker run -d -p 5000:5000 --name calculator saga8521/calculator-app
